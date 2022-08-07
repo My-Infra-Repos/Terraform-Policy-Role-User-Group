@@ -1,4 +1,3 @@
-
 output "aws_iam_role"{
 value = "Role ${aws_iam_role.btc-prod-role.name} created with ID ${aws_iam_role.btc-prod-role.id} And ARN ${aws_iam_role.btc-prod-role.arn}"
 }
@@ -27,4 +26,3 @@ output "aws_iam_user" {
 output "aws_iam_group_membership"{
 value = "User ${aws_iam_user.btc-prod-user.name} is added to group ${aws_iam_group.btc-prod-group.name}"
 }
-

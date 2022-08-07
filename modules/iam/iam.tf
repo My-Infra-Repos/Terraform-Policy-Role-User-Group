@@ -11,7 +11,7 @@ resource "aws_iam_role" "btc-prod-role" {
 
 # Defnition of Policy
 resource "aws_iam_policy" "btc-prod-policy" {
-  name = var.ploicy_name
+  name = var.policy_name
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -40,12 +40,10 @@ resource "aws_iam_group" "btc-prod-group" {
     aws_iam_role.btc-prod-role,
     aws_iam_group.btc-prod-group
   ]
-
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
       {
-
         Action = ["sts:AssumeRole"]
         Effect   = "Allow"
         Resource = "${aws_iam_role.btc-prod-role.arn}"
@@ -75,5 +73,3 @@ name="btc-prod-group-assignment"
   users = [aws_iam_user.btc-prod-user.name]
   group=aws_iam_group.btc-prod-group.name
 }
-
-

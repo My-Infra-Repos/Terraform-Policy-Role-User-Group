@@ -10,10 +10,8 @@ variable "groupname" {
     default="btc-prod-group"
 } 
 
-variable "ploicy_name" {
+variable "policy_name" {
     type = string
     description="Group to be created"
     default="btc-prod-policy"
 } 
-
- 
