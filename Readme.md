@@ -13,8 +13,8 @@ In order to run test pleasev follow below:
 1. Clone the repository on a system with valid terraform installation.
 2. Navigate to the folder environment/demo and run folloiwng commands
 
-~~sh
-a. terraform init
-b. terraform plan
-c. teraaform  apply
-~~sh
+~~
+    a. terraform init
+    b. terraform plan
+    c. teraaform  apply
+~~
