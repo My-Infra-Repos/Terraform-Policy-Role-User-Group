@@ -10,8 +10,11 @@ Note: All entities have been named in a way btc-prod-role, btc-prod-policy, btc-
 ----------------------------------------------------------------------------------------------------------
 
 In order to run test pleasev follow below:
+=============================================
     1. Clone the repository on a system with valid terraform installation.
+    2. Download aws-cli, setup your default profile with aws-configure.
     2. Navigate to the folder environment/demo and run folloiwng commands
+    
 
 ~~
     a. terraform init
