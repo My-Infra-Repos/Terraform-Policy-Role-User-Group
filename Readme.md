@@ -16,8 +16,8 @@ In order to run test pleasev follow below:
     2. Navigate to the folder environment/demo and run folloiwng commands
     
 
-~~
-    a. terraform init
-    b. terraform plan
-    c. teraaform  apply
-~~
+            ~~
+                a. terraform init
+                b. terraform plan
+                c. teraaform  apply
+            ~~
